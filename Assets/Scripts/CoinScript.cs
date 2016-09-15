@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class CoinScript : MonoBehaviour {
 
@@ -19,5 +20,8 @@ public class CoinScript : MonoBehaviour {
     {
         Destroy(gameObject);
         mainScript.score++;
+
+        if (mainScript.score == 10)
+            SceneManager.LoadScene("IntroScene");
     }
 }

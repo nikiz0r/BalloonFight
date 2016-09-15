@@ -19,7 +19,7 @@ public class MainScript : MonoBehaviour {
 
         Instantiate(selectedMap, new Vector2(2.2f, 0), transform.rotation);
 
-        InvokeRepeating("CoinSpawn", 5, 5);
+        InvokeRepeating("CoinSpawn", 2, 2);
 	}
 	
 	// Update is called once per frame
